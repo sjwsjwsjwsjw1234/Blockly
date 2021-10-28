@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/splitLine"
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#dadef7"></View>
+
+    <ImageView
+        android:id="@+id/headImage"
+        android:layout_below="@+id/splitLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pro"
+        android:maxHeight="100dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="100dp"/>
+
+    <TextView
+        android:id="@+id/content_name"
+        android:maxWidth="100dp"
+        android:layout_below="@+id/headImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hemeiwolong"/>
+
+    <TextView
+        android:id="@+id/content_date"
+        android:layout_below="@+id/content_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="100dp"
+        android:text="xxxx/xx/xx hh:mm:ss"/>
+
+    <TextView
+        android:id="@+id/content_content"
+        android:layout_marginLeft="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fffffffffffffffffffffffffffffffffff
+"/>
+
+</RelativeLayout>

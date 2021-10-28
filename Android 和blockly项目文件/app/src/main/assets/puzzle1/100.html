@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Puzzle</title>
+  <link rel="stylesheet" href="stylesheet/style.css">
+  <link rel="stylesheet" href="stylesheet/global.css">
+  <link rel="stylesheet" href="stylesheet/gl.css">
+
+  <script src="js/blockly_compressed.js"></script>
+  <script src="js/blocks_compressed.js"></script>
+  <script src="js/javascript_compressed.js"></script>
+  <script src="js/python_compressed.js"></script>
+  <script src="js/php_compressed.js"></script>
+  <script src="js/lua_compressed.js"></script>
+  <script src="js/dart_compressed.js"></script>
+
+  <script src="js/rocket1_bl.js"></script>
+  <script src="js/rocket1_gen.js"></script>
+  <script src="js/lajifeilei_b.js"></script>
+  <script src="js/lajifeilei_g.js"></script>
+  <script src="js/workspace.js"></script>
+  <script src="js/code.js"></script>
+</head>
+<body background="image1\002.jpg" width="100%"></body>
+  <!--
+  <script>
+ 
+    var bl=confirm("准备好了吗小朋友？~");
+    if(bl)
+    {var str=prompt("考一道检验你有没有睡醒的高难问题：1+1等于几？");
+    if(str=="2")
+    {alert("你竟然答对了？！！那么我们开始吧！");
+  
+    alert("在这个游戏中，你可以扮演火箭驾驶员、火箭设计师、火箭建造师等多种身份，快来使用你的火箭吧！");
+  }
+    else
+    {alert("这都答不对？？？重来！"); 
+    location.reload();
+    }
+    }
+    else
+    {alert("准备好了的话重来，我在这等你");location.reload();}
+    
+    </script>
+    -->
+    <!--
+  <div class="nav" ><img src="image1/map.jpg"  width="600" height="600" alt="ma"></div>
+  -->
+  <table width="100%" height="100%">
+    <tr>
+      <td>
+        <h1><a href="https://developers.google.com/blockly/"></a><!--&rlm; &gt;-->
+          <a href="../index.html"></a><!--&rlm; &gt;-->
+          <span id="title"></span><a><strong>forseparation</strong> </a><a href="../index.html">
+
+        </h1>
+        
+      </td>
+      <td class="farSide">
+        <select id="languageMenu"></select>
+        <a class="privacyLink" href="https://policies.google.com/privacy"></a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan=2>
+        <table width="100%">
+          <tr id="tabRow" height="1em">
+            <td id="tab_blocks" class="tabon">...</td>
+            <td class="tabmin tab_collapse">&nbsp;</td>
+            <td id="tab_javascript" class="taboff tab_collapse"></td>           
+            <td class="tabmin tab_collapse">&nbsp;</td>
+            <td id="tab_python" class="taboff tab_collapse"></td>
+            <td class="tabmin tab_collapse">&nbsp;</td>
+            <td id="tab_php" class="taboff tab_collapse"></td>
+            <td class="tabmin tab_collapse">&nbsp;</td>
+            <td id="tab_lua" class="taboff tab_collapse"></td>
+            <td class="tabmin tab_collapse">&nbsp;</td>
+            <td id="tab_dart" class="taboff tab_collapse"></td>
+            <td class="tabmin tab_collapse">&nbsp;</td>
+            <td id="tab_xml" class="taboff tab_collapse"></td>
+            <td class="tabmin">&nbsp;</td>
+            <td id="tab_code" class="taboff">
+              <select id="code_menu"></select>
+            </td>
+            <td class="tabmax">
+
+              <button id="trashButton" class="notext" title="...">
+                <img src='media/1x1.gif' class="trash icon21">
+              </button>
+              <button id="linkButton" class="notext" title="...">
+                <img src='media/1x1.gif' class="link icon21">
+              </button>
+              <button id="runButton" class="notext primary" title="...">
+                <img src='media/1x1.gif' class="run icon21">
+              </button>
+
+           </td>
+          
+            <a>&#13</a>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="99%" colspan=2 id="content_area">
+      </td>
+    </tr>
+  </table>
+  <div id="content_blocks" class="content"></div>
+  <pre id="content_javascript" class="content prettyprint lang-js"></pre>
+  <pre id="content_python" class="content prettyprint lang-py"></pre>
+  <pre id="content_php" class="content prettyprint lang-php"></pre>
+  <pre id="content_lua" class="content prettyprint lang-lua"></pre>
+  <pre id="content_dart" class="content prettyprint lang-dart"></pre>
+  <textarea id="content_xml" class="content" wrap="off"></textarea>
+
+  <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+   
+    
+    <category name="垃圾分类小能手">
+      <block type="kehuishoulaji"></block>
+      <block type="youhailaji"></block>
+      <block type="qitalaji"></block>
+      <block type="chuyulaji"></block>
+      <block type="yilaguan"></block>
+      <block type="suitiexie"></block>
+      <block type="guopi"></block>
+      <block type="fanhe"></block>
+      <block type="feidianchi"></block>
+      <block type="nongyaopingzi"></block>
+      <block type="yugutou"></block>
+      <block type="shucaikuye"></block>
+    </category>
+   
+  </xml>
+
+</body>
+</html>

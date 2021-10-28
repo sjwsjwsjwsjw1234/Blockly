@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" value="notranslate">
+  <title>Blockly Demo:</title>
+  <link rel="stylesheet" href="stylesheet/style.css">
+
+  <script src="js/blockly_compressed.js"></script>
+  <script src="js/blocks_compressed.js"></script>
+  <script src="js/javascript_compressed.js"></script>
+  <script src="js/python_compressed.js"></script>
+  <script src="js/php_compressed.js"></script>
+  <script src="js/lua_compressed.js"></script>
+  <script src="js/dart_compressed.js"></script>
+  <script src="js/raw_block.js"></script>
+  <script src="js/raw_gen.js"></script>
+  <script src="js/code.js"></script>
+
+  <script src="song3/js/song_b.js"></script>
+  <script src="song3/js/song_g.js"></script>
+  
+</head>
+<body background="song3/image1\bac1.png" width="75%">
+  <table width="100%" height="100%">
+    <tr>
+      <td>
+        <h1><a href="https://developers.google.com/blockly/"></a>
+          <a href="../index.html"></a>
+          <span id="title">...</span><strong>forSong</strong><font size="1"></font> 
+        </h1>
+        
+      </td>
+      <td class="farSide">
+        <select id="languageMenu"></select>
+        <a class="privacyLink" href="https://policies.google.com/privacy"></a>
+      </td>
+      <!--
+      <td><a href="index.html"><h2 style="color: gold;" align="left"><img src="image1/one.png" width="20" height="20"></h2></a></td>
+      <td><a href="index2.html"><h2 style="color: gold;" align="left"><img src="image1/two.png" width="20" height="20"></h2></a></td>
+    -->
+  </tr>
+    <tr>
+      <td colspan=2>
+        <table width="100%" height="100%">
+          <tr id="tabRow" height="1em">
+            <td id="tab_blocks" class="tabon">...</td>
+            <td class="tabmin tab_collapse">&nbsp;</td>
+            <td id="tab_javascript" class="taboff tab_collapse"></td>
+            <td class="tabmin tab_collapse">&nbsp;</td>
+            <td id="tab_python" class="taboff tab_collapse"></td>
+            <td class="tabmin tab_collapse">&nbsp;</td>
+            <td id="tab_php" class="taboff tab_collapse"></td>
+            <td class="tabmin tab_collapse">&nbsp;</td>
+            <td id="tab_lua" class="taboff tab_collapse"></td>
+            <td class="tabmin tab_collapse">&nbsp;</td>
+            <td id="tab_dart" class="taboff tab_collapse"></td>
+            <td class="tabmin tab_collapse">&nbsp;</td>
+            <td id="tab_xml" class="taboff tab_collapse"></td>
+            <td class="tabmin">&nbsp;</td>
+            <td id="tab_code" class="taboff">
+              <select id="code_menu"></select>
+            </td>
+            <td class="tabmax">
+              <button id="trashButton" class="notext" title="...">
+                <img src='media/1x1.gif' class="trash icon21">
+              </button>
+              <button id="linkButton" class="notext" title="...">
+                <img src='media/1x1.gif' class="link icon21">
+              </button>
+              <button id="runButton" class="notext primary" title="...">
+                <img src='media/1x1.gif' class="run icon21">
+              </button>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="99%" colspan=2 id="content_area">
+      </td>
+    </tr>
+  </table>
+  
+  <div id="content_blocks" class="content"></div>
+  <pre id="content_javascript" class="content prettyprint lang-js"></pre>
+  <pre id="content_python" class="content prettyprint lang-py"></pre>
+  <pre id="content_php" class="content prettyprint lang-php"></pre>
+  <pre id="content_lua" class="content prettyprint lang-lua"></pre>
+  <pre id="content_dart" class="content prettyprint lang-dart"></pre>
+  <textarea id="content_xml" class="content" wrap="off"></textarea>
+
+  <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+  
+    <category name="完成其中任务" colour="360">
+      <block type="choose1"></block>
+      <block type="choose2"></block>
+  </category>
+  <category name="选择乐器" colour="330">  
+      <block type="instruments"></block>   
+      <!--<block type="instrument2"></block> -->   
+      <block type="song1"></block>
+  </category>
+  <category name="优化设计" colour="300">
+   
+    <block type="repeat"></block>
+    <block type="xiuzhi"></block>
+
+</category>
+
+  <sep></sep>
+    
+  </xml>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
+<input type="button" value="connect" onClick="AndroidBlueConnect()" />
+<input type="button" value="turnleft" onClick="AndroidTurnLeft()" />
+
+<script type="text/javascript">
+    function showAndroidToast(toast) {
+        Android.showToast(toast);
+    }
+    function AndroidBlueConnect() {
+        Android.blueConnect();
+    }
+    function AndroidTurnLeft() {
+        Android.turnLeft();
+    }
+</script>

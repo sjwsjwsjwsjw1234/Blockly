@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.codeland">
+
+    <uses-sdk />
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 网络连接权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 设备休眠 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- sd卡存储 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 摄像头 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 通知震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" /> <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- <permission android:name="cn.bmob.permission.push" android:protectionLevel="normal"/> -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 允许用户发送短信 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".DiscoveryActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".BlueTooth"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".SearchvidActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".ChangevidActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".ProgramvidActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".LogopActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".LitionActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".MaxtActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".CodeteachActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".LuaActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".DartActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".PhpActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".PythonActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".JavascriptActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".SwitchActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".TansuoActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".MyMusicActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".MusicmenuActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".QuestionActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".SortActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".ExploreActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".GamemenuActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".ControlmenuActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".VisionmenuActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".TeachmenuActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".MenuActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".PoemActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".AmusementActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".car.BlocklyControlActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".car.SpeechActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".car.DirectionActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".ContentActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".ui.BlocklyGameActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".ui.GameBaseActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".car.TurtleActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".ui.KnowledgeLearningActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".scratchgame.scratchgameui.ScratchGameGuideActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".ui.BaseLevelActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".scratchgame.ScratchJrActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".scratchgame.HubActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".ForumActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".ProgramActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".ClassifierActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".ui.CodingBaseActivity_test"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".MusicActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBarAndTitle" />
+
+        <meta-data
+            android:name="designwidth"
+            android:value="1080" />
+        <meta-data
+            android:name="designdpi"
+            android:value="480" />
+        <meta-data
+            android:name="fontsize"
+            android:value="1.0" />
+        <meta-data
+            android:name="unit"
+            android:value="dp" />
+
+        <provider
+            android:name="cn.bmob.v3.util.BmobContentProvider"
+            android:authorities="com.example.codeland.BmobContentProvider" />
+    </application>
+
+</manifest>

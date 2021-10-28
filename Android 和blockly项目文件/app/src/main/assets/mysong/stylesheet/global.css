@@ -1,0 +1,190 @@
+
+body{
+    margin: 0;
+}
+/*建立右侧浮窗*/
+.nav { width:200px; height: 200px; border: 1px solid #a849d4; position:fixed;right:10px;top:40%; }
+.nav2{ width:200px; height: 110px; border: 1px solid #a849d4;color: rgb(150, 89, 20); position:fixed;right:10px;top:70%;}
+a:link,a:visited{
+    text-decoration:none; /*超链bai接du无下划线*/
+    }
+a:hover{
+    text-decoration:underline; /*鼠标zhi放上去有dao下划线*/
+    }
+.bac{
+    height: 100%;
+  width: 100%;
+  background: url('../image1/1.svg') no-repeat;
+  background-size: cover;
+  position: absolute;
+  overflow: hidden;
+
+}
+.bac2{
+    height: 100%;
+    width: 100%;
+    background: url('../image1/6.svg') no-repeat;
+    background-size: cover;
+    position: absolute;
+    overflow: hidden;
+}
+.bac3{
+    height: 100%;
+    width: 100%;
+    background: url('../image1/2.svg') no-repeat;
+    background-size: cover;
+    position: absolute;
+    overflow: hidden;
+}
+.bac4{
+    height: 100%;
+    width: 100%;
+    background: url('../image1/xiaoche-yuyinkongzhi.svg') no-repeat;
+    background-size: cover;
+    position: absolute;
+    overflow: hidden;
+}
+.demo{
+    text-align:center;
+}
+.size1{
+    font-size:24px;
+}
+.size2{
+    font-size:16px;
+}
+.col{
+    color: brown;
+   
+}
+.colw{
+    color: rgb(255, 255, 255);
+   
+}
+.colg{
+    color: green ;
+   
+}
+.colr{
+    color: red;
+    
+}
+.colrgb{
+    color: rgb(108, 180, 0);
+   
+}
+.colyg{
+    color: yellowgreen;
+    
+}
+.colc{
+    color: coral;
+   
+}
+.dropbtn {  
+    background-color: #0847bd;
+    color: white;
+    padding: 16px;
+    font-size: 22px;
+    height: 70px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color:  rgb(42, 50, 165);
+}
+.dropbtn1 {  
+    background-color: #0847bd;
+    color: white;
+    padding: 16px;
+    font-size: 22px;
+    width:300px;
+    height: 70px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn1:hover, .dropbtn1:focus {
+    background-color:  rgb(42, 50, 165);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ff7b00;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+.left{
+    line-height: 230%;
+    border-right: 1% solid brown;
+    border-left: 1% solid brown;
+    float:left;
+    width: 25%;
+    height: 100%;
+    background-color: rgb(240, 171, 42);
+}
+.d1 {
+    
+    width:100%;
+    height: 200px;         
+   
+    display: inline-block;
+    margin: 0px 10px 10px 0px;
+    padding: 10px 10px 10px 10px;
+}
+.d2 {
+    
+    width:100%;
+    height: 50px; 
+    display: inline-block;
+}
+.footer {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    /* 方法一 */
+    position: fixed;
+    bottom: 0;
+}
+.footer2 {
+    
+    
+    position:fixed;
+    
+    left:50%;
+    vertical-align: middle;
+    top:50%;
+    
+    margin:-200px 0 0 -300px;
+}
+.footer3 {
+    
+    
+    position:fixed;
+    
+    left:50%;
+    vertical-align: middle;
+    top:50%;
+    
+    margin:-200px 0 0 -175px;
+}

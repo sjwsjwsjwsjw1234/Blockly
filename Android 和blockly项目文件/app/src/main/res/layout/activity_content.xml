@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ContentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_hf_cook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:src="@drawable/blocklypic"/>
+
+        <TextView
+            android:id="@+id/tv_hf_title"
+            android:layout_toRightOf="@+id/iv_hf_cook"
+            android:text="Blockly讨论区"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_toRightOf="@+id/iv_hf_cook"
+            android:layout_below="@+id/tv_hf_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="论坛介绍:在Blockly论坛，你可以分享你学习到的代码，并从他人的代码中学习到新的知识！"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="#dadef7"></View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/lv_hf_listview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:dividerHeight="5dp"
+        android:layout_weight="1">
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="#dadef7"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_hf_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="发表东西吧"
+            android:maxLines="2"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_hf_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"/>
+    </LinearLayout>
+
+</LinearLayout>

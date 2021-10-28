@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:background="@mipmap/icon_back"
+        android:id="@+id/button_back_main"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/background_module"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="30dp">
+
+            <ImageView
+                android:id="@+id/to_music"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="0dp"
+                android:background="@mipmap/knowledge_notebook" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="音乐演奏"
+                android:textSize="28dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="30dp">
+
+            <ImageView
+                android:id="@+id/to_animation"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="0dp"
+                android:background="@mipmap/knowledge_notebook" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="动画制作"
+                android:textSize="28dp"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="30dp">
+
+            <ImageView
+                android:id="@+id/to_poem"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="0dp"
+                android:background="@mipmap/knowledge_notebook" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="古诗集句"
+                android:textSize="28dp"/>
+        </FrameLayout>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,108 @@
+apply plugin: 'com.android.application'
+apply plugin: 'de.undercouch.download'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '29.0.2'
+
+    defaultConfig {
+        applicationId "com.example.codeland"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        flavorDimensions "blockly"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    flavorDimensions 'blockly'
+    productFlavors {
+        full {
+            dimension 'blockly'
+        }
+        lite {
+            dimension 'blockly'
+        }
+    }
+
+    compileOptions {
+
+        sourceCompatibility JavaVersion.VERSION_1_8
+
+        targetCompatibility JavaVersion.VERSION_1_8
+
+    }
+    lintOptions {
+        abortOnError false
+    }
+    aaptOptions {
+        noCompress "tflite"  //表示不让aapt压缩的文件后缀
+    }
+}
+// import DownloadModels task
+project.ext.ASSET_DIR = projectDir.toString() + '/src/main/assets'
+project.ext.TMP_DIR   = project.buildDir.toString() + '/downloads'
+
+// Download default models; if you wish to use your own models then
+// place them in the "assets" directory and comment out this line.
+//apply from: "download_model.gradle"
+apply from:'download_model.gradle'
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation project(path: ':blocklylib-core')
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.drawerlayout:drawerlayout:1.0.0'
+    implementation 'com.android.support:percent:25.2.0'
+    implementation files('libs\\bluecove-2.1.1.jar')
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation project(':blocklylib-vertical')
+    implementation 'org.litepal.android:java:3.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+
+    //第三方的一个轻量好用的安卓开发屏幕适配工具库
+    implementation 'me.yatoooon:screenadaptation:1.1.1'
+    //高亮工具
+    implementation 'com.qw:curtain:0.0.7'
+
+    //Bmobd的引入
+    implementation 'cn.bmob.android:bmob-sdk:3.7.8'
+    implementation "io.reactivex.rxjava2:rxjava:2.2.8"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.14.1'
+    implementation 'com.squareup.okio:okio:2.2.2'
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    implementation 'me.weyye.hipermission:library:1.0.7'
+    implementation 'com.github.donkingliang:ImageSelector:2.2.0'
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    implementation 'top.zibin:Luban:1.1.8'
+
+    //Android UI框架库
+    implementation 'com.google.android.material:material:1.2.1'
+    //悬浮按钮库
+    implementation 'com.ddz.materialdesign:FloatingActionButton:1.0.4'
+
+
+    //implementation 'org.tensorflow:tensorflow-lite:2.2.0'
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'com.google.truth:truth:1.0.1'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test:rules:1.1.0'
+
+    // Build off of nightly TensorFlow Lite
+    implementation 'org.tensorflow:tensorflow-lite:0.0.0-nightly'
+    implementation 'org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly'
+    implementation 'org.tensorflow:tensorflow-lite-support:0.0.0-nightly'
+}
